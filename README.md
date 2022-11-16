@@ -3,7 +3,7 @@ Tools for compiling ntx files
 
 ntx is a shorthand note taking format. It is built off indents, e.g.
 ```
-\corrollary
+\corollary
     e^{i\pi} + 1 = 0
 \proof
     We have already seen that for real \theta
