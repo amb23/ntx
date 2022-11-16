@@ -137,11 +137,15 @@ using env_data_t = std::tuple<EnvironmentType, std::string>;
 
 static const std::unordered_map<std::string, env_data_t> s_environments = {
     {"proof",         {EnvironmentType::PlainText, "proof"}},
-    {"thm",           {EnvironmentType::PlainText, "thm"}},
+    {"thm",           {EnvironmentType::PlainText, "theorem"}},
+    {"theorem",       {EnvironmentType::PlainText, "theorem"}},
     {"lemma",         {EnvironmentType::PlainText, "lemma"}},
+    {"corollary",     {EnvironmentType::PlainText, "corollary"}},
     {"prop",          {EnvironmentType::PlainText, "proposition"}},
+    {"proposition",   {EnvironmentType::PlainText, "proposition"}},
     {"construction",  {EnvironmentType::PlainText, "construction"}},
     {"eq",            {EnvironmentType::MathBlock, "equation"}},
+    {"equation",      {EnvironmentType::MathBlock, "equation"}},
     {"section",       {EnvironmentType::Section, "section"}},
     {"subsection",    {EnvironmentType::Section,"subsection"}},
     {"subsubsection", {EnvironmentType::Section,"subsubsection"}},
