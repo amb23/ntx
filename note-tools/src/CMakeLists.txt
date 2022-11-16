@@ -20,3 +20,7 @@ if (Boost_FOUND)
 else()
     message(FATAL_ERROR "failed to find boost")
 endif()
+
+configure_file(version.hpp.tmpl version.hpp)
+target_include_directories(ntx PUBLIC ${PROJECT_BINARY_DIR})
+
